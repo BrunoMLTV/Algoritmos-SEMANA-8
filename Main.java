@@ -9,34 +9,26 @@ package lab08;
  * @author LAB-USR-AREQUIPA
  */
 public class Main {
-
     public static void main(String[] args) {
-
-        // =========================
+        
         // PRUEBA INVERSIÓN
-        // =========================
+       
         System.out.println("===== INVERSIÓN =====");
 
         ListaEnlazada lista = new ListaEnlazada();
-
         lista.insertar(1);
         lista.insertar(2);
         lista.insertar(3);
         lista.insertar(4);
         lista.insertar(5);
-
         System.out.println("Lista original:");
         lista.mostrar();
-
         lista.cabeza = InversorLista.invertir(lista.cabeza);
-
         System.out.println("Lista invertida:");
         lista.mostrar();
 
-
-        // =========================
         // PRUEBA CICLOS
-        // =========================
+
         System.out.println("\n===== CICLOS =====");
 
         ListaEnlazada listaCiclo = new ListaEnlazada();
@@ -60,10 +52,8 @@ public class Main {
         System.out.println("¿Tiene ciclo?");
         System.out.println(tieneCiclo);
 
-
-        // =========================
         // PRUEBA FUSIÓN
-        // =========================
+
         System.out.println("\n===== FUSIÓN =====");
 
         ListaEnlazada lista1 = new ListaEnlazada();
@@ -95,7 +85,6 @@ public class Main {
 
             actual = actual.siguiente;
         }
-
         System.out.println();
     }
 }
