@@ -9,23 +9,15 @@ package lab08;
  * @author LAB-USR-AREQUIPA
  */
 public class InversorLista {
-
     public static Nodo invertir(Nodo cabeza) {
-
         Nodo anterior = null;
         Nodo actual = cabeza;
-
         while (actual != null) {
-
             Nodo siguiente = actual.siguiente;
-
             actual.siguiente = anterior;
-
             anterior = actual;
-
             actual = siguiente;
         }
-
         return anterior;
     }
 }
